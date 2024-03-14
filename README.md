@@ -13,7 +13,7 @@ docker run -v <local-path-with-logs>:/app/logs/ -v <local-path-with-data>:/app/d
 
 # Input JSON format [NOT FINAL]
 
-```
+```json
 {
     "input": [
         "/app/data/abt.csv",
@@ -42,7 +42,7 @@ docker run -v <local-path-with-logs>:/app/logs/ -v <local-path-with-data>:/app/d
 
 # Output JSON format [NOT FINAL]
 
-```
+```json
 {
     "message": "pyJedAI project executed successfully!",
     "output": [
