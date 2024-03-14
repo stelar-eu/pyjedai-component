@@ -1,5 +1,5 @@
-# pyjedai-component
-Dockerized pyJedAI for integration into the KLMS.
+# pyJedAI as a component
+Dockerized pyJedAI for integration into the KLMS. 
 
 To build the docker image:
 ```
