@@ -70,7 +70,7 @@ def run(j):
         results = ccc.evaluate(clusters, with_classification_report=True)
         nn_pairs_df.to_csv(output_file)
 
-        perfomance_dict = {"f1": results['F1 %'],
+        perfomance_dict = {"f1_score": results['F1 %'],
                            "precision": results['Precision %'],
                            "recall" : results['Recall %']}
 
