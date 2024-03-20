@@ -25,9 +25,9 @@ def prep_df(input_file, separator, engine, minio):
     if input_file.startswith('s3://'):
         bucket, key = input_file.replace('s3://', '').split('/', 1)
         client = Minio(minio['endpoint_url'], access_key=minio['id'], secret_key=minio['key'])
-        df = pd.read_csv(client.get_object(bucket, key), header=None)
+        df = pd.read_csv(client.get_object(bucket, key), sep=separator, na_filter=False)
     else:
-        df = pd.read_csv(input_file, sep=separator, engine=engine, na_filter=False)
+        df = pd.read_csv(input_file, sep=separator, na_filter=False)
     return df
 
 def run(j):
