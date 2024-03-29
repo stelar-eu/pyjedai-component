@@ -1,0 +1,15 @@
+{
+    "message": "pyJedAI project executed successfully!",
+    "output": [
+        {
+            "name": "List of predicted duplicates",
+            "path": null
+        }
+    ],
+    "metrics": {
+        "f1": 6.294964028776979,
+        "precision": 97.22222222222221,
+        "recall": 3.2527881040892193
+    },
+    "status": 200
+}

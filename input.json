@@ -1,0 +1,21 @@
+{
+    "input": [
+        "/app/data/incidents.csv"
+    ],
+    "parameters": {
+        "separator": ",",
+        "engine" : "python",
+        "output_file": "deduplicated.csv",
+        "id_column_name_1" : "Unnamed: 0",
+        "vectorizer": "st5",
+        "similarity_search": "faiss",
+        "top_k": 1,
+        "similarity_threshold": 0.9
+    },
+    "minio": {
+        "endpoint_url": "XXXXXXXXX",
+        "id": "XXXXXXXXX",
+        "key": "XXXXXXXXX",
+        "bucket": "XXXXXXXXX"
+    }
+}
