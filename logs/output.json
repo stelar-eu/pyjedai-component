@@ -1,5 +1,0 @@
-{
-    "message": "An error occurred during data processing.",
-    "error": "HTTPSConnectionPool(host='minio.stelar.di.uoa.gr', port=443): Max retries exceeded with url: /minio.stelar.di.uoa.gr-bucket?location= (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f8c16b62ad0>: Failed to resolve 'minio.stelar.di.uoa.gr' ([Errno -2] Name or service not known)\"))",
-    "status": 500
-}

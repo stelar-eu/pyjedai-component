@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Check if three arguments are provided
@@ -32,7 +31,7 @@ echo "$result" > input.json
 
 
 # Execute the tool
-python main.py input.json output.json
+python deduplication.py input.json output.json
 
 # Perform the second curl request with replacements and store the response in a variable
 output_json=$(<output.json)  # Read content of output.json file into a variable

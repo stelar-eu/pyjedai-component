@@ -1,9 +1,14 @@
 FROM aiteamuoa/pyjedai:0.1.5
+RUN apt-get update && apt-get install -y \
+    curl \
+    jq \
+ && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY . /app/
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-ENTRYPOINT ["python3", "main.py"]
+ENTRYPOINT ["./run.sh"]
+#ENTRYPOINT ["python3", "main.py"]
 
 
 # docker run -d -p 9059:9000 -p 9060:9001 

@@ -1,11 +1,9 @@
 {
     "input": [
-        "/app/data/incidents.csv"
+        "s3://agroknow-bucket/incidents.csv"
     ],
     "parameters": {
         "separator": ",",
-        "engine" : "python",
-        "output_file": "deduplicated.csv",
         "id_column_name_1" : "Unnamed: 0",
         "vectorizer": "st5",
         "similarity_search": "faiss",
@@ -13,9 +11,9 @@
         "similarity_threshold": 0.9
     },
     "minio": {
-        "endpoint_url": "XXXXXXXXX",
-        "id": "XXXXXXXXX",
-        "key": "XXXXXXXXX",
-        "bucket": "XXXXXXXXX"
-    }
+        "bucket": "mlflow-bucket", 
+         "endpoint_url": "minio.magellan2.imsi.athenarc.gr",
+         "id": "glnr7nwsMtbbx6XC",
+         "key": "djBWh0jYg4cka9OvqqgAz17qOMU6KV2n"
+         }
 }
